@@ -142,6 +142,9 @@ export default {
       ]);
 
       this.profile = await profileRes.json();
+      if (this.profile.profileImage) {
+        this.profile.profileImage = `${base}${this.profile.profileImage}`;
+      }
       this.experience = await expRes.json();
       this.skills = await skillsRes.json();
       this.languages = await langRes.json();

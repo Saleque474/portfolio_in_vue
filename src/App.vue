@@ -4,7 +4,6 @@
     <nav class="navbar">
       <div class="nav-container">
         <div class="nav-brand">
-          <img src="/assets/logo.svg" alt="Logo" class="nav-logo" />
           <span class="nav-name">{{ profileData?.name || 'Portfolio' }}</span>
         </div>
         <div class="nav-links">
