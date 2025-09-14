@@ -1,0 +1,7 @@
+[
+  { "name": "Website Frontend", "category": "Development", "rating":80 },
+  { "name": "Website Backend", "category": "Development", "rating": 90 },
+  { "name": "AWS", "category": "Cloud", "rating": 90 },
+  { "name": "SQL", "category": "Database", "rating": 90 },
+  { "name": "Redis", "category": "Database", "rating": 90 }
+]
