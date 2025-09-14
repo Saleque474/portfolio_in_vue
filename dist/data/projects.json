@@ -3,14 +3,14 @@
     "title": "Telenest",
     "description": "An Official Website of Telenest BD. They have business in Recharge for Sim cards, Bill Payment. Their other Software mobile app and admin panel is also done by us.",
     "technologies": ["ReactJS", "NextJS","Python","Django","Flutter"], 
-    "image": "/assets/telenest.png",
+    "image": "assets/telenest.png",
     "link": "https://telenestbd.com"
   },
   {
     "title": "Zikrify",
     "description": "An e-commerce website for Zikrify. They are businessing on Qatar.",
     "technologies": ["ReactJS", "NextJS","Python","Django"],
-    "image": "/assets/zikrify.png",
+    "image": "assets/zikrify.png",
     "link": "https://zikrify.com/"
   }
 ]

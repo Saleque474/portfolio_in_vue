@@ -70,6 +70,9 @@ export default {
       .then((res) => res.json())
       .then((data) => {
         this.profile = data;
+        if (this.profile.profileImage) {
+          this.profile.profileImage = `${base}${this.profile.profileImage}`;
+        }
       })
       .catch((error) => {
         console.error('Failed to load profile:', error);

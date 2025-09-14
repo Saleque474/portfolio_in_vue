@@ -71,6 +71,12 @@ export default {
       .then((res) => res.json())
       .then((data) => {
         this.projects = data;
+
+        for (let i = 0; i < this.projects.length; i++) {
+          if (!this.projects[i].image) {
+            this.projects[i].image = `${base}${this.projects[i].image}`;
+          }
+        }
       })
       .catch((error) => {
         console.error('Failed to load projects:', error);

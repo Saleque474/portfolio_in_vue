@@ -40,7 +40,7 @@ onMounted(async () => {
   }
 
   // Simulate loading all data files
-
+  const base = import.meta.env.BASE_URL || '/';
   const dataFiles = [
     `${base}data/skills.json`,
     `${base}data/projects.json`,
