@@ -1,7 +1,0 @@
-[
-  { "name": "JavaScript", "rating": 95 },
-  { "name": "TypeScript", "rating": 90 },
-  { "name": "Python", "rating": 100 },
-  { "name": "Dart", "rating": 100 },
-  { "name": "Rust", "rating": 80 }
-]
