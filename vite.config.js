@@ -10,6 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  base: '/portfolio_in_vue/',
   assetsInclude: ['**/*.woff', '**/*.woff2'],
   resolve: {
     alias: {
