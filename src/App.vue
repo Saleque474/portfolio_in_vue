@@ -32,18 +32,20 @@ const profileData = ref(null);
 onMounted(async () => {
   // Load profile data
   try {
-    const response = await fetch('/data/profile.json');
+    const base = import.meta.env.BASE_URL || '/';
+    const response = await fetch(`${base}data/profile.json`);
     profileData.value = await response.json();
   } catch (error) {
     console.error('Failed to load profile:', error);
   }
 
   // Simulate loading all data files
+
   const dataFiles = [
-    '/data/skills.json',
-    '/data/projects.json',
-    '/data/experience.json',
-    '/data/languages.json',
+    `${base}data/skills.json`,
+    `${base}data/projects.json`,
+    `${base}data/experience.json`,
+    `${base}data/languages.json`,
   ];
 
   for (let i = 0; i < dataFiles.length; i++) {

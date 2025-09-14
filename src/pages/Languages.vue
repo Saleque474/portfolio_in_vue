@@ -53,7 +53,9 @@ export default {
     };
   },
   mounted() {
-    fetch('/data/languages.json')
+    const base = import.meta.env.BASE_URL || '/';
+
+    fetch(`${base}data/languages.json`)
       .then((res) => res.json())
       .then((data) => {
         console.log('Fetched languages data:', data); // Debugging fetched data

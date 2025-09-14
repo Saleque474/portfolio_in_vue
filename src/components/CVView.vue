@@ -132,12 +132,13 @@ export default {
   },
   async mounted() {
     try {
+      const base = import.meta.env.BASE_URL || '/';
       const [profileRes, expRes, skillsRes, langRes, projectsRes] = await Promise.all([
-        fetch('/data/profile.json'),
-        fetch('/data/experience.json'),
-        fetch('/data/skills.json'),
-        fetch('/data/languages.json'),
-        fetch('/data/projects.json'),
+        fetch(`${base}data/profile.json`),
+        fetch(`${base}data/experience.json`),
+        fetch(`${base}data/skills.json`),
+        fetch(`${base}data/languages.json`),
+        fetch(`${base}data/projects.json`),
       ]);
 
       this.profile = await profileRes.json();

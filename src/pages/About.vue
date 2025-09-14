@@ -65,7 +65,8 @@ export default {
     };
   },
   mounted() {
-    fetch('/data/profile.json')
+    const base = import.meta.env.BASE_URL || '/';
+    fetch(`${base}data/profile.json`)
       .then((res) => res.json())
       .then((data) => {
         this.profile = data;

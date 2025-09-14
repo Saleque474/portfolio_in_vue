@@ -40,7 +40,8 @@ export default {
     };
   },
   mounted() {
-    fetch('/data/skills.json')
+    const base = import.meta.env.BASE_URL || '/';
+    fetch(`${base}data/skills.json`)
       .then((res) => res.json())
       .then((data) => {
         this.skills = data;

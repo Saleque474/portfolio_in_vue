@@ -65,7 +65,9 @@ export default {
     };
   },
   mounted() {
-    fetch('/data/projects.json')
+    const base = import.meta.env.BASE_URL || '/';
+
+    fetch(`${base}data/projects.json`)
       .then((res) => res.json())
       .then((data) => {
         this.projects = data;

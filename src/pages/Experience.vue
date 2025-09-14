@@ -61,7 +61,8 @@ export default {
     };
   },
   mounted() {
-    fetch('/data/experience.json')
+    const base = import.meta.env.BASE_URL || '/';
+    fetch(`${base}data/experience.json`)
       .then((res) => res.json())
       .then((data) => {
         this.experience = data;
